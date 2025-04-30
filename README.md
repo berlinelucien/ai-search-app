@@ -10,10 +10,6 @@ An AI-powered search application built with React and OpenAI’s GPT API. Ask na
 - 🧠 Simple, clean UI for fast querying
 - 🗂 Built with React + Axios (no backend required)
 
-## 📸 Demo
-
-![AI Search App Screenshot](screenshot.png) 
-
 ## 🚀 Getting Started
 
 ### 1. Clone the repo
