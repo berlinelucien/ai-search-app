@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# 🔍 AI Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An AI-powered search application built with React and OpenAI’s GPT API. Ask natural language questions and get intelligent, conversational answers — just like ChatGPT.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- ✅ Instant answers using OpenAI GPT
+- 📜 Search history (stored in `localStorage`)
+- 🔖 Bookmark results for quick access
+- 🧠 Simple, clean UI for fast querying
+- 🗂 Built with React + Axios (no backend required)
 
-### `npm start`
+## 📸 Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![AI Search App Screenshot](screenshot.png) 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started
 
-### `npm test`
+### 1. Clone the repo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash ```
+git clone https://github.com/berlinelucien/ai-search-app.git
+cd ai-search-app
 
-### `npm run build`
+### 2. Install dependencies
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Setup your own OpenAI API Key
+Create a file called .env.development in the root:
+REACT_APP_OPENAI_API_KEY=your_openai_api_key_here
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 4. Start the development server
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🧠 How It Works
+The app sends your query to OpenAI’s Chat Completions API (gpt-3.5-turbo) and displays the result. History and bookmarks are saved in localStorage.
 
-### `npm run eject`
+### 🛠 Tech Stack
+React
+Axios
+OpenAI API
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 📁 Folder Structure
+src/
+├── components/
+│   ├── SearchBar.js
+│   ├── ResultCard.js
+│   ├── HistoryList.js
+│   └── BookmarkList.js
+├── App.js
+└── index.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 📌 To-Do / Ideas
+ -[ ] Add delete button for bookmarks
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ -[ ] Tab-based view switcher (Search / Bookmarks)
 
-## Learn More
+  -[ ] Firebase or backend integration for user accounts
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  -[ ] Dark mode toggle
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
